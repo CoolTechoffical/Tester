@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>District Overview | Kerala School Holidays</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <h1>Kerala Edu</h1>
+      <p class="sidebar-subtitle">District and sub-district rain holiday tracking</p>
+      <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="holidays.html">Holiday Calendar</a>
+        <a class="active" href="districts.html">District Overview</a>
+        <a href="about.html">About Kerala Schools</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <h2>Kerala District Update Zones</h2>
+          <p class="muted">Rain-holiday notifications can vary by district and sub-district.</p>
+        </div>
+        <span class="badge">14 Districts</span>
+      </header>
+
+      <section class="panel">
+        <h3>All Kerala Districts</h3>
+        <div class="chips">
+          <span>Thiruvananthapuram</span><span>Kollam</span><span>Pathanamthitta</span><span>Alappuzha</span>
+          <span>Kottayam</span><span>Idukki</span><span>Ernakulam</span><span>Thrissur</span>
+          <span>Palakkad</span><span>Malappuram</span><span>Kozhikode</span><span>Wayanad</span>
+          <span>Kannur</span><span>Kasaragod</span>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h3>Sample Rain Updates</h3>
+        <table>
+          <thead>
+            <tr><th>District</th><th>Sub-district</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Kozhikode</td><td>Koyilandy</td><td><span class="pill tag-rain">Rain Holiday</span></td></tr>
+            <tr><td>Ernakulam</td><td>Aluva</td><td><span class="pill tag-rain">Rain Holiday</span></td></tr>
+            <tr><td>Kollam</td><td>Karunagappally</td><td><span class="pill tag-strike">Strike Risk</span></td></tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

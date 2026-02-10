@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Holiday Calendar | Kerala School Holidays</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <h1>Kerala Edu</h1>
+      <p class="sidebar-subtitle">Dynamic rain and holiday updates for Kerala schools</p>
+      <nav>
+        <a href="index.html">Dashboard</a>
+        <a class="active" href="holidays.html">Holiday Calendar</a>
+        <a href="districts.html">District Overview</a>
+        <a href="about.html">About Kerala Schools</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <h2>Holiday Page (3 Main Div + Dynamic List)</h2>
+          <p class="muted">Filter by district and category. Includes rain holidays with district and sub-district names.</p>
+        </div>
+        <span class="badge">Live-style Display</span>
+      </header>
+
+      <section class="panel filter-panel">
+        <div class="filters">
+          <label>District
+            <select id="districtFilter">
+              <option value="all">All</option>
+              <option value="Kozhikode">Kozhikode</option>
+              <option value="Ernakulam">Ernakulam</option>
+              <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+              <option value="Kollam">Kollam</option>
+            </select>
+          </label>
+
+          <label>Category
+            <select id="categoryFilter">
+              <option value="all">All</option>
+              <option value="rain_holiday">Rain Holiday</option>
+              <option value="fixed_holiday">Fixed Holiday</option>
+              <option value="school_strike">School Strike</option>
+              <option value="strike">Strike</option>
+            </select>
+          </label>
+
+          <div class="result-pill">Showing: <b id="resultCount">0</b> holidays</div>
+        </div>
+      </section>
+
+      <section class="holiday-three-grid" id="holidayCards"></section>
+
+      <section class="panel">
+        <h3>Category-based Total Leave in Year</h3>
+        <div class="totals-grid" id="categoryTotals"></div>
+        <div class="total-box total-highlight">
+          <strong id="totalLeaveCount">0</strong>
+          <span>Total Leave in Year</span>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h3>Rain Holiday Scope Guide</h3>
+        <div class="scope-grid">
+          <div>
+            <h4>District</h4>
+            <p>Applies to all schools in the district when collector declares weather holiday.</p>
+          </div>
+          <div>
+            <h4>Sub-district</h4>
+            <p>Only specific taluks/zones are closed based on local alerts and water level.</p>
+          </div>
+          <div>
+            <h4>Full District (Direct)</h4>
+            <p>Immediate full district closure with direct notification for students and teachers.</p>
+          </div>
+        </div>
+        <p class="small-note">Next step: always check early-morning update from district authority before travel.</p>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

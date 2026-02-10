@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "date": "2026-06-12",
+    "title": "Heavy Rain Holiday Alert",
+    "category": "rain_holiday",
+    "district": "Kozhikode",
+    "subDistrict": "Koyilandy",
+    "scope": "sub_district",
+    "description": "Orange alert with waterlogging risk; classes suspended for student safety.",
+    "image": "https://images.unsplash.com/photo-1593692909682-6e6be6f89fcb?auto=format&fit=crop&w=900&q=60"
+  },
+  {
+    "id": 2,
+    "date": "2026-07-02",
+    "title": "Rain Holiday Declared",
+    "category": "rain_holiday",
+    "district": "Ernakulam",
+    "subDistrict": "Aluva",
+    "scope": "district",
+    "description": "District collector announced closure for all schools due to high river level.",
+    "image": "https://images.unsplash.com/photo-1472145246862-b24cf25c4a36?auto=format&fit=crop&w=900&q=60"
+  },
+  {
+    "id": 3,
+    "date": "2026-08-21",
+    "title": "School Strike Notice",
+    "category": "school_strike",
+    "district": "Thiruvananthapuram",
+    "subDistrict": "Neyyattinkara",
+    "scope": "district",
+    "description": "Transport union disruption may impact school operations in selected zones.",
+    "image": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=60"
+  },
+  {
+    "id": 4,
+    "date": "2026-08-27",
+    "title": "Thiruvonam Fixed Holiday",
+    "category": "fixed_holiday",
+    "district": "All Kerala",
+    "subDistrict": "All",
+    "scope": "full_district",
+    "description": "State-wide festival holiday for all government and aided schools.",
+    "image": "https://images.unsplash.com/photo-1517090504586-fde19ea6066f?auto=format&fit=crop&w=900&q=60"
+  },
+  {
+    "id": 5,
+    "date": "2026-10-02",
+    "title": "Gandhi Jayanthi",
+    "category": "fixed_holiday",
+    "district": "All Kerala",
+    "subDistrict": "All",
+    "scope": "full_district",
+    "description": "National fixed holiday observed by all schools.",
+    "image": "https://images.unsplash.com/photo-1456324504439-367cee3b3c32?auto=format&fit=crop&w=900&q=60"
+  },
+  {
+    "id": 6,
+    "date": "2026-11-18",
+    "title": "General Strike",
+    "category": "strike",
+    "district": "Kollam",
+    "subDistrict": "Karunagappally",
+    "scope": "sub_district",
+    "description": "Public transport interruption expected; local closure likely.",
+    "image": "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=900&q=60"
+  }
+]
