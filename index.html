@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kerala School Holidays Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <h1>Kerala Edu</h1>
+      <p class="sidebar-subtitle">Dynamic dashboard for students and teachers</p>
+      <nav>
+        <a class="active" href="index.html">Dashboard</a>
+        <a href="holidays.html">Holiday Calendar</a>
+        <a href="districts.html">District Overview</a>
+        <a href="about.html">About Kerala Schools</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <h2>Kerala Schools Smart Leave Dashboard</h2>
+          <p class="muted">Dynamic screen support + category tags + district rain updates.</p>
+        </div>
+        <span class="badge">2026 Planner</span>
+      </header>
+
+      <section class="hero panel">
+        <div>
+          <h3>Useful for Students & Teachers</h3>
+          <p>Track exam planning, assignment schedule, and attendance recovery with category-based leave insights.</p>
+          <ul class="benefits">
+            <li>📘 Students can plan study revisions before strike/rain closures.</li>
+            <li>🧑‍🏫 Teachers can arrange lesson plans and backup online materials.</li>
+            <li>🚌 Parents can check district-level closure updates quickly.</li>
+          </ul>
+        </div>
+
+        <div class="hero-stat-grid">
+          <div class="hero-stat"><strong id="totalLeaveCount">0</strong><span>Total Leaves in Year</span></div>
+          <div class="hero-stat"><strong>14</strong><span>Districts Targeted</span></div>
+          <div class="hero-stat"><strong>5</strong><span>Tag Categories</span></div>
+          <div class="hero-stat"><strong>API</strong><span>Backend Enabled</span></div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h3>Category Totals (Color Tags)</h3>
+        <div id="categoryTotals" class="totals-grid"></div>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
