@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard | Kerala School Holidays</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <h1>Kerala Edu</h1>
+      <p class="sidebar-subtitle">Admin dashboard</p>
+      <nav>
+        <a href="index.html">Public Dashboard</a>
+        <a href="holidays.html">Holiday Calendar</a>
+        <a class="active" href="/admin/dashboard">Admin Dashboard</a>
+        <a href="/admin/login">Admin Login</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <h2>Admin Dashboard</h2>
+          <p class="muted">Full-stack control panel: login secured, DB-backed data, and holiday CRUD.</p>
+        </div>
+        <div class="top-actions">
+          <span class="badge">Protected Panel</span>
+          <button id="logoutBtn" class="button button-danger">Logout</button>
+        </div>
+      </header>
+
+      <section class="cards" id="adminKpis"></section>
+
+      <section class="panel">
+        <h3>Create Holiday Entry</h3>
+        <form id="holidayCreateForm" class="admin-form admin-wide-form">
+          <label>Date<input type="date" id="holidayDate" required /></label>
+          <label>Title<input type="text" id="holidayTitle" placeholder="Holiday title" required /></label>
+          <label>Category
+            <select id="holidayCategory" required>
+              <option value="rain_holiday">Rain Holiday</option>
+              <option value="fixed_holiday">Fixed Holiday</option>
+              <option value="school_strike">School Strike</option>
+              <option value="strike">Strike</option>
+              <option value="festival_or_seasonal">Festival / Seasonal</option>
+            </select>
+          </label>
+          <label>District<input type="text" id="holidayDistrict" placeholder="District" required /></label>
+          <label>Sub-district<input type="text" id="holidaySubDistrict" placeholder="Sub-district" required /></label>
+          <label>Scope
+            <select id="holidayScope" required>
+              <option value="district">District</option>
+              <option value="sub_district">Sub-district</option>
+              <option value="full_district">Full District</option>
+            </select>
+          </label>
+          <label>Image URL<input type="url" id="holidayImage" placeholder="https://..." required /></label>
+          <label class="full-row">Description<textarea id="holidayDescription" rows="3" required></textarea></label>
+          <button type="submit" class="button">Create Holiday</button>
+        </form>
+        <p id="createStatus" class="small-note"></p>
+      </section>
+
+      <section class="panel">
+        <h3>Category Distribution</h3>
+        <div class="totals-grid" id="adminCategoryTotals"></div>
+      </section>
+
+      <section class="panel">
+        <h3>Latest Holiday Updates</h3>
+        <div id="adminLatest" class="holiday-three-grid"></div>
+      </section>
+
+      <section class="panel">
+        <h3>All Holiday Records (Database)</h3>
+        <table>
+          <thead><tr><th>ID</th><th>Date</th><th>Title</th><th>District</th><th>Category</th><th>Action</th></tr></thead>
+          <tbody id="adminHolidayTableBody"></tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+  <script src="admin.js"></script>
+</body>
+</html>
