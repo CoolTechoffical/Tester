@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Login | Kerala School Holidays</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <h1>Kerala Edu</h1>
+      <p class="sidebar-subtitle">Admin control portal</p>
+      <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="holidays.html">Holiday Calendar</a>
+        <a href="districts.html">District Overview</a>
+        <a href="about.html">About Kerala Schools</a>
+        <a class="active" href="/admin/login">Admin Login</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <h2>Admin Login Portal</h2>
+          <p class="muted">Secure area for school holiday updates, category control, and district announcements.</p>
+        </div>
+        <span class="badge">Admin Access</span>
+      </header>
+
+      <section class="admin-grid">
+        <article class="panel admin-auth-panel">
+          <h3>Sign in</h3>
+          <form id="adminLoginForm" class="admin-form" autocomplete="on">
+            <label>Username
+              <input type="text" id="username" required placeholder="admin" autocomplete="username" />
+            </label>
+            <label>Password
+              <input type="password" id="password" required placeholder="admin123" autocomplete="current-password" />
+            </label>
+            <button type="submit" class="button" id="loginBtn">Login to Admin Dashboard</button>
+          </form>
+          <p id="loginError" class="error-text" aria-live="polite"></p>
+          <p id="loginStatus" class="small-note" aria-live="polite"></p>
+          <p class="small-note">Demo credentials: <b>admin / admin123</b></p>
+        </article>
+
+        <article class="panel admin-info-panel">
+          <h3>What admins can do</h3>
+          <ul class="benefits">
+            <li>Publish rain holiday notices by district and sub-district.</li>
+            <li>Track strike, school strike, and fixed holiday categories.</li>
+            <li>Review total leave impact and latest activity cards.</li>
+          </ul>
+          <div class="status-stack">
+            <span class="pill tag-rain">Rain Updates</span>
+            <span class="pill tag-fixed">Fixed Holidays</span>
+            <span class="pill tag-school-strike">School Strike</span>
+            <span class="pill tag-strike">Strike</span>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+  <script src="admin.js"></script>
+</body>
+</html>
