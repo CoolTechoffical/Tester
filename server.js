@@ -5,13 +5,22 @@ const session = require('express-session');
 const seedHolidays = require('./data/holidays.json');
 const { initDb, all, get, run } = require('./db');
 =======
+<<<<<<< HEAD
+const session = require('express-session');
+const seedHolidays = require('./data/holidays.json');
+const { initDb, all, get, run } = require('./db');
+=======
 const holidays = require('./data/holidays.json');
 >>>>>>> main
+>>>>>>> origin/main
 
 const app = express();
 const PORT = process.env.PORT || 4173;
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/main
 app.use(express.json());
 app.use(
   session({
@@ -158,6 +167,8 @@ app.get('/api/holidays', async (req, res) => {
 app.get('/api/summary', async (_req, res) => {
   const holidays = await all(db, 'SELECT * FROM holidays');
 
+<<<<<<< HEAD
+=======
 =======
 app.use(express.static(path.join(__dirname)));
 
@@ -177,6 +188,7 @@ app.get('/api/holidays', (req, res) => {
 
 app.get('/api/summary', (_req, res) => {
 >>>>>>> main
+>>>>>>> origin/main
   const categoryCounts = holidays.reduce((acc, item) => {
     acc[item.category] = (acc[item.category] || 0) + 1;
     return acc;
@@ -194,6 +206,9 @@ app.get('/api/summary', (_req, res) => {
 });
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/main
 app.use((err, _req, res, _next) => {
   console.error(err);
   res.status(500).json({ success: false, message: 'Internal server error' });
@@ -205,8 +220,11 @@ app.use((err, _req, res, _next) => {
     console.log(`Kerala school holidays app running at http://localhost:${PORT}`);
   });
 })();
+<<<<<<< HEAD
+=======
 =======
 app.listen(PORT, () => {
   console.log(`Kerala school holidays app running at http://localhost:${PORT}`);
 });
 >>>>>>> main
+>>>>>>> origin/main
