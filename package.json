@@ -4,6 +4,7 @@
   "description": "Kerala school holidays dashboard with dynamic frontend and backend API",
   "main": "server.js",
   "scripts": {
+<<<<<<< HEAD
     "start": "node server.js",
     "test": "npm run test:conflicts && npm run test:lockfile && npm run test:syntax",
     "test:conflicts": "node scripts/check-conflicts.js",
@@ -14,5 +15,11 @@
     "express": "^4.19.2",
     "express-session": "^1.18.0",
     "sqlite3": "^5.1.7"
+=======
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+>>>>>>> main
   }
 }
