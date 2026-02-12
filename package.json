@@ -1,0 +1,20 @@
+{
+  "name": "kerala-school-holidays",
+  "version": "1.0.0",
+  "description": "Kerala school holidays dashboard with dynamic frontend and backend API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "npm run test:conflicts && npm run test:lockfile && npm run test:syntax",
+    "test:conflicts": "node scripts/check-conflicts.js",
+    "test:syntax": "node -c server.js && node -c db.js && node -c admin.js && node -c script.js",
+    "test:lockfile": "node scripts/validate-lockfile.js",
+    "fix:package-lock": "rm -f package-lock.json && npm install --package-lock-only",
+    "fix:merge": "npm run fix:package-lock && npm test"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "sqlite3": "^5.1.7"
+  }
+}
