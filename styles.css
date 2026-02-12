@@ -32,6 +32,13 @@ body {
 }
 
 .sidebar-subtitle { margin: 10px 0 22px; color: #d8f0da; font-size: 0.92rem; }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
+>>>>>>> origin/main
 .sidebar nav { display: grid; gap: 10px; }
 
 .sidebar a {
@@ -42,11 +49,21 @@ body {
   transition: background 0.25s ease, transform 0.2s ease;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/main
 .sidebar a:hover,
 .sidebar a.active {
   background: rgba(255, 255, 255, 0.2);
   transform: translateX(3px);
 }
+<<<<<<< HEAD
+=======
+=======
+.sidebar a:hover, .sidebar a.active { background: rgba(255, 255, 255, 0.2); transform: translateX(3px); }
+>>>>>>> main
+>>>>>>> origin/main
 
 .main { padding: 28px; }
 
@@ -69,6 +86,10 @@ body {
   font-size: 0.82rem;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/main
 .button {
   border: none;
   border-radius: 10px;
@@ -88,6 +109,12 @@ body {
 
 .panel,
 .card {
+<<<<<<< HEAD
+=======
+=======
+.panel, .card {
+>>>>>>> main
+>>>>>>> origin/main
   background: var(--panel);
   border: 1px solid var(--border);
   border-radius: 16px;
@@ -96,11 +123,21 @@ body {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/main
 .panel:hover,
 .card:hover {
   transform: translateY(-2px);
   box-shadow: 0 14px 30px rgba(33, 69, 48, 0.16);
 }
+<<<<<<< HEAD
+=======
+=======
+.panel:hover, .card:hover { transform: translateY(-2px); box-shadow: 0 14px 30px rgba(33, 69, 48, 0.16); }
+>>>>>>> main
+>>>>>>> origin/main
 
 .hero {
   display: grid;
@@ -111,6 +148,13 @@ body {
 }
 
 .benefits { margin: 0; padding-left: 18px; display: grid; gap: 8px; }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
+>>>>>>> origin/main
 .hero-stat-grid { display: grid; grid-template-columns: repeat(2, minmax(120px, 1fr)); gap: 10px; }
 
 .hero-stat {
@@ -119,14 +163,28 @@ body {
   background: #fafff6;
   padding: 12px;
 }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> main
+>>>>>>> origin/main
 .hero-stat strong { display: block; font-size: 1.4rem; }
 .hero-stat span { color: var(--muted); }
 
 .filter-panel { margin-bottom: 18px; }
 .filters { display: flex; flex-wrap: wrap; gap: 12px; align-items: end; }
 .filters label { display: grid; gap: 6px; font-weight: 600; }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> main
+>>>>>>> origin/main
 select {
   padding: 10px;
   border-radius: 10px;
@@ -152,11 +210,21 @@ select {
 
 .holiday-card { overflow: hidden; }
 .holiday-card img {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/main
   width: 100%;
   height: 160px;
   border-radius: 12px;
   object-fit: cover;
   margin-bottom: 12px;
+<<<<<<< HEAD
+=======
+=======
+  width: 100%; height: 160px; border-radius: 12px; object-fit: cover; margin-bottom: 12px;
+>>>>>>> main
+>>>>>>> origin/main
 }
 
 .holiday-meta-line { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
@@ -191,6 +259,10 @@ select {
   background: #fbfff8;
   transition: transform 0.2s ease;
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/main
 
 .total-box strong { display: block; font-size: 1.4rem; }
 .total-highlight { background: #d9edd0; }
@@ -202,13 +274,29 @@ select {
   margin-bottom: 10px;
 }
 
+<<<<<<< HEAD
+=======
+=======
+.total-box strong { display: block; font-size: 1.4rem; }
+.total-highlight { background: #d9edd0; }
+
+.scope-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 10px; }
+>>>>>>> main
+>>>>>>> origin/main
 .scope-grid > div {
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 12px;
   background: #f9fff3;
 }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> main
+>>>>>>> origin/main
 .small-note { color: var(--muted); margin-bottom: 0; }
 
 .chips { display: flex; flex-wrap: wrap; gap: 10px; }
@@ -222,8 +310,17 @@ select {
 }
 
 table { width: 100%; border-collapse: collapse; }
+<<<<<<< HEAD
 th,
 td { text-align: left; padding: 12px; border-bottom: 1px solid var(--border); }
+=======
+<<<<<<< HEAD
+th,
+td { text-align: left; padding: 12px; border-bottom: 1px solid var(--border); }
+=======
+th, td { text-align: left; padding: 12px; border-bottom: 1px solid var(--border); }
+>>>>>>> main
+>>>>>>> origin/main
 th { color: var(--muted); }
 
 .tag-rain { background: #d8f0ff; border-color: #a6d8f4; color: #0f4f78; }
@@ -232,6 +329,10 @@ th { color: var(--muted); }
 .tag-strike { background: #ffe0e0; border-color: #ffb2b2; color: #8b2222; }
 .tag-festival { background: #efe2ff; border-color: #d4bbff; color: #4f2d7a; }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/main
 .metric {
   font-size: 1.3rem;
   font-weight: 700;
@@ -276,10 +377,23 @@ th { color: var(--muted); }
   .layout { grid-template-columns: 1fr; }
   .sidebar, .main { padding: 18px; }
   .hero, .admin-grid { grid-template-columns: 1fr; }
+<<<<<<< HEAD
+=======
+=======
+@media (max-width: 1100px) {
+  .layout { grid-template-columns: 1fr; }
+  .sidebar, .main { padding: 18px; }
+  .hero { grid-template-columns: 1fr; }
+>>>>>>> main
+>>>>>>> origin/main
   .holiday-three-grid { grid-template-columns: 1fr; }
   .topbar { flex-direction: column; }
   .result-pill { margin-left: 0; }
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/main
 
 
 .admin-form-grid {
@@ -300,3 +414,8 @@ th { color: var(--muted); }
 .admin-form-grid select {
   width: 100%;
 }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> main
+>>>>>>> origin/main
